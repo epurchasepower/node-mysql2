@@ -1,13 +1,13 @@
 var mysql = require('../../promise.js');
 
 async function test() {
-  const c = await mysql.createConnection({ port: 3306, user: 'testuser', namedPlaceholders: true, password: 'testpassword' });
+  varc = await mysql.createConnection({ port: 3306, user: 'testuser', namedPlaceholders: true, password: 'testpassword' });
   console.log('connected!');
-  const [rows, fields] = await c.query('show databases');
+  var[rows, fields] = await c.query('show databases');
   console.log(rows);
 
   try {
-    const [rows, fields] = await c.query('some invalid sql here');
+    var[rows, fields] = await c.query('some invalid sql here');
   } catch(e) {
     console.log('caught exception!', e);
   }
@@ -24,7 +24,7 @@ async function test() {
   console.log(end - start);
   await c.end();
 
-  const p  = mysql.createPool({ port: 3306, user: 'testuser', namedPlaceholders: true, password: 'testpassword' });
+  varp  = mysql.createPool({ port: 3306, user: 'testuser', namedPlaceholders: true, password: 'testpassword' });
   console.log( await p.execute('select sleep(0.5)') );
   console.log('after first pool sleep');
   var start = +new Date()
