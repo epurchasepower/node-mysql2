@@ -1,5 +1,7 @@
 # Node MySQL 2
 
+NOTE: This fork is used to replace db-mysql for the development version of the daemon server.
+
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Node.js Version][node-version-image]][node-version-url]
