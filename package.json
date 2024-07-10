@@ -1,5 +1,5 @@
 {
-  "name": "mysql2",
+  "name": "db-mysql",
   "version": "1.0.0",
   "description": "fast mysql driver. Implements core protocol, prepared statements, ssl and compression in native JS",
   "main": "index.js",
